@@ -1,0 +1,16 @@
+h1 {
+  color: blueviolet;
+  font-family: Arial;
+}
+
+#parrafo {
+  color: blue;
+}
+
+.parrafoClase {
+  color: crimson !important;
+}
+
+div h1 {
+  color: yellow;
+}
