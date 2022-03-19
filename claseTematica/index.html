@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Juegazos, la neta</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <style>
+      body{
+        background-image: url(./img/fondo.jpg);
+        background-attachment: fixed;
+      }
+      .flex-container{
+        display: flex;
+        flex-direction: row;
+      }
+
+      @media(max-width: 600px)
+      {
+        .flex-container{
+          flex-direction: column;
+        }
+      }
+      
+    </style>
+
+      <nav class="pink accent-3">
+        <div class="nav-wrapper container row">
+          <a href="#" class="brand-logo"><img src="./img/icons8-controller-48.png"></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="./clasicos.html">Clásicos</a></li>
+            <li><a href="./novedades.html">Nuevos lanzamientos</a></li>
+            <li><a href="./posters.html">Pósters suaves</a></li>
+          </ul>
+        </div>
+      </nav>
+      <br>
+  
+      <div class="container center-align">
+        <h3 class="white-text">Una página dedicada a los mejores videojuegos de la historia en mi opinión</h3>
+      </div>
+      <br>
+
+      <div class="container slider pink darken-3">
+        <ul class="slides">
+          <li>
+            <img src="./img/retro1.jpg">
+          </li>
+          <li>
+            <img src="./img/retro2.jpg"> 
+          </li>
+          <li>
+            <img src="./img/retro3.jpg"> 
+          </li>
+          <li>
+            <img src="./img/retro4.jpg"> 
+          </li>
+        </ul>
+      </div>
+      <br>
+
+      <div class="row container flex-container">
+        <div class="col l6 m6 s12 flex-container">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/finalfantasyvii.jpg">
+              <span class="card-title" style="text-shadow: 1px 1px 1px black; background-color: rgba(0, 0, 0, 0.9); width: 100%;">Retro</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light purple hoverable pulse" href="./clasicos.html"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <p>Temazos de las anteriores generaciones de videojuegos (hasta el año 2012) <br><br></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col l5 offset-l1 m6 s12 flex-container">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/eldenring.png">
+              <span class="card-title" style="text-shadow: 1px 1px 1px black; background-color: rgba(0, 0, 0, 0.9); width: 100%;">Nuevos títulos</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light pink hoverable pulse" href="./novedades.html"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <p>Temazos de las actuales generaciones de videojuegos (2013-presente)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row container">
+        <div class="col l5 m6 s12">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/poster_starfox.png">
+              <span class="card-title" style="text-shadow: 1px 1px 1px black; background-color: rgba(0, 0, 0, 0.9); width: 100%;">Pósters suaves</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light light-green hoverable pulse" href="./posters.html"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <p>Simplemente una colección de pósters épicos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="page-footer purple accent-4">
+        <div class="container">
+          <div class="row">
+            <div>
+              <h5 class="white-text">Redes sociales</h5>
+                <a class="grey-text text-lighten-3" href="https://www.facebook.com/vazquezfrausto52/"><img class="responsive-img hoverable" src="./img/icons8-facebook-40.png"></a>
+                <a class="grey-text text-lighten-3" href="https://www.instagram.com/carlos52vf/"><img class="responsive-img hoverable" src="./img/icons8-instagram-40.png"></a>
+                <a class="grey-text text-lighten-3" href="https://twitter.com/vqzvgcarlos"><img class="responsive-img hoverable" src="./img/icons8-twitter-40.png"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2022 Juan Carlos Vázquez Frausto
+          </div>
+        </div>
+      </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>    
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems, {
+            duration: 500,
+            indicators: false,
+            interval: 4000
+        });
+        });
+    </script>
+  </body>
+</html>
